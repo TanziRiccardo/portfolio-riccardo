@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tanzi Riccardo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* --- SLIDE CAROUSEL --- */
+
+    /* Contenitore della media nella slide */
+    .slide-media {
+      position: relative;
+      width: 100%;
+      height: 700px !important;
+      /* regola 320–700 in base al design */
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    /* Immagini responsive dentro lo slider */
+    .slide-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Swiper: fa sì che le slide ereditino l’altezza del contenitore */
+    .project-swiper,
+    .project-swiper .swiper-wrapper,
+    .project-swiper .swiper-slide {
+      height: 100%;
+    }
+
+    /* Overlay dark per le slide (come le card statiche) */
+    .slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, .45);
+      opacity: 0;
+      transition: opacity .25s ease;
+      z-index: 8;
+      /* sotto alle frecce Swiper */
+      pointer-events: none;
+      /* non blocca swipe/click di base */
+    }
+
+    .slide-media:hover .slide-overlay {
+      opacity: 1;
+    }
+
+    /* Azioni centrate sopra l’overlay */
+    .slide-actions {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 12px;
+      pointer-events: auto;
+      /* i bottoni sono cliccabili */
+    }
+
+    .action-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .95);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+    }
+
+    .action-btn i {
+      font-size: 20px;
+      line-height: 1;
+      color: #111;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Controlli Swiper sopra l’overlay */
+    .project-swiper .swiper-button-prev,
+    .project-swiper .swiper-button-next {
+      z-index: 10;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+    }
+
+    .project-swiper .swiper-pagination {
+      z-index: 9;
+    }
+
+    .project-swiper .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, .9);
+      opacity: .7;
+    }
+
+    .project-swiper .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    /* --- CARD PORTFOLIO GENERALE --- */
+
+    .portfolio-card .portfolio-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ⚠️ Limita l’altezza “fissa” SOLO alle card SENZA carosello */
+    .portfolio-card:not(.has-carousel) .portfolio-image img {
+      width: 100%;
+      height: 700px !important;
+      /* o ciò che preferisci per le card statiche */
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Se usi ancora l’overlay globale nelle card statiche, evita conflitti con lo slider */
+    .portfolio-card.has-carousel .portfolio-overlay {
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    .portfolio-card .portfolio-actions {
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-between">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-top">
+      <div class="profile-img">
+        <img src="assets/img/logo.png" alt="" class="img-fluid">
+      </div>
+
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+        <h1 class="sitename">Dott.Tanzi Riccardo</h1>
+      </a>
+
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Chi sono</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servizi</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contatti</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">
+                Software Developer
+              </h1>
+              <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                Sviluppo soluzioni digitali che uniscono tecnologia e usabilità. Mi occupo di progettazione e sviluppo
+                di applicazioni web e mobile con un approccio attento alla qualità del codice e all’esperienza utente.
+              </p>
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                <a href="#portfolio" class="btn-primary">I miei Progetti</a>
+                <a href="#contact" class="btn-secondary">Contattami</a>
+              </div>
+              <!-- <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">25+</span>
+                  <span class="stat-label">Happy Clients</span>
+                </div>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img src="assets/img/logo.png" alt="Creative Designer Portfolio" class="img-fluid main-image">
+                <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
+                  <i class="bi bi-palette"></i>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="700">
+                  <i class="bi bi-code-square"></i>
+                  <span>Web &amp; App Development</span>
+                </div>
+                <!-- <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
+                  <i class="bi bi-camera"></i>
+                  <span>Photography</span>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Curriculum</h2>
+        <p>Il mio percorso formativo e professionale nel mondo dello sviluppo software, dalla formazione tecnica alla
+          realizzazione di soluzioni digitali complete e su misura.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-start">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="professional-journey">
+              <div class="section-intro">
+                <div class="icon-wrapper">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <h2>Esperienze Professionali</h2>
+                <p>Esperienze maturate nello sviluppo di applicazioni web e mobile, con un approccio orientato alla
+                  qualità del codice e all’esperienza utente.</p>
+              </div>
+
+              <div class="experience-timeline">
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="position-meta">
+                      <span class="timeline-year">2025 - Presente</span>
+                    </div>
+                    <h3>Sviluppatore Software Freelance</h3>
+                    <h4>Progetti Web e Mobile</h4>
+                    <p>Progettazione e sviluppo di applicazioni web e Android, con particolare attenzione a interfacce
+                      intuitive, geolocalizzazione, e gestione dati lato server.</p>
+                    <div class="key-achievements">
+                      <span class="achievement-tag">PHP / MySQL</span>
+                      <span class="achievement-tag">Android (Java)</span>
+                      <span class="achievement-tag">Leaflet / OpenStreetMap</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="position-meta">
+                      <span class="timeline-year">2019 - 2024</span>
+                    </div>
+                    <h3>Progetti Personali e Formativi</h3>
+                    <h4>Ambito Web e Mobile</h4>
+                    <p>Realizzazione di siti web dinamici, sistemi di autenticazione, e app con funzioni di logistica e
+                      tracking GPS, utilizzando Android Studio.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="education-skills">
+              <div class="section-intro">
+                <div class="icon-wrapper">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h2>Formazione</h2>
+                <p>Un percorso di studi tecnico e universitario focalizzato sull’informatica, dallo sviluppo software ai
+                  sistemi e reti.</p>
+              </div>
+
+              <div class="education-grid">
+
+                <div class="education-card primary" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="education-header">
+                    <div class="degree-icon">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <div class="degree-info">
+                      <h3>Laurea Triennale in Informatica</h3>
+                      <p class="institution">Università degli Studi di Perugia</p>
+                      <span class="graduation-year">2021 - 2025</span>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <p>Corso focalizzato su programmazione, basi di dati, sviluppo web e mobile, sicurezza informatica e
+                      progettazione di sistemi software.</p>
+                    <div class="honors">
+                      <span class="honor-badge">Tesi su studio, progettazione e sviluppo di applicazioni web e mobile
+                        per il tracciamento geospaziale</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="education-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="education-header">
+                    <div class="degree-icon">
+                      <i class="bi bi-award"></i>
+                    </div>
+                    <div class="degree-info">
+                      <h3>Diploma ITIS – Informatica e Telecomunicazioni</h3>
+                      <p class="institution">Istituto Tecnico Tecnologico “Franchetti Salviani” – Città di Castello</p>
+                      <span class="graduation-year">2016 - 2021</span>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <p>Articolazione “Informatica”, con approfondimenti su linguaggi di programmazione, reti, sistemi
+                      operativi e gestione database.</p>
+                  </div>
+                </div>
+
+                <div class="certification-section" data-aos="fade-up" data-aos-delay="400">
+                  <h4>Certificazioni e Competenze</h4>
+                  <div class="certifications">
+                    <div class="cert-item">
+                      <i class="bi bi-patch-check"></i>
+                      <div class="cert-details">
+                        <span class="cert-name">Sviluppo Web (PHP, HTML, CSS, JavaScript)</span>
+                        <span class="cert-provider">Autodidatta • 2020 - Presente</span>
+                      </div>
+                    </div>
+                    <div class="cert-item">
+                      <i class="bi bi-patch-check"></i>
+                      <div class="cert-details">
+                        <span class="cert-name">Sviluppo Android (Java, Material Design)</span>
+                        <span class="cert-provider">Autodidatta • 2023</span>
+                      </div>
+                    </div>
+                    <div class="cert-item">
+                      <i class="bi bi-patch-check"></i>
+                      <div class="cert-details">
+                        <span class="cert-name">Gestione Database MySQL e Sicurezza</span>
+                        <span class="cert-provider">Progetti accademici e personali • 2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Una selezione dei miei progetti più significativi, dallo sviluppo web e mobile alle applicazioni con
+          geolocalizzazione e interfacce interattive. Ogni progetto rappresenta una combinazione di creatività, logica e
+          passione per il codice ben scritto.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">Tutti</li>
+              <li data-filter=".filter-web">Web App</li>
+              <li data-filter=".filter-android">App Android</li>
+              <li data-filter=".filter-game">Game Dev</li>
+            </ul>
+          </div>
+
+          <div class="row gy-5 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <!-- LogiTrack -->
+            <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="swiper project-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/tutto.png" class="img-fluid" alt="Schermata 1">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/tutto.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/tutto.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/IMG_4868.PNG" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/operai_insieme.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/operai_insieme.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/amm.png" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/amm.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/amm.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/pos-amm.png" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/pos-amm.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/pos-amm.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Paginazione + frecce del carosello -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="portfolio-category">Web & Mobile</span>
+                    <span class="portfolio-year">2025</span>
+                  </div>
+                  <h3 class="portfolio-title">LogiTrack</h3>
+                  <p class="portfolio-description">Piattaforma per aziende di consegne che gestisce turni, pause e
+                    tracciamento GPS dei furgoni in tempo reale, con interfaccia web e app Android. Alcune immagini nel
+                    carosello.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- TruffleHunt -->
+            <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="swiper project-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/Pannelli_Utente_mobile.png" class="img-fluid"
+                            alt="Schermata 1">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/Pannelli_Utente_mobile.png"
+                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
+                                title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/Pannelli_Utente_mobile.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/IMG_4900.PNG" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/INSIEME.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/INSIEME.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Paginazione + frecce del carosello -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="portfolio-category">Web & Mobile</span>
+                    <span class="portfolio-year">2025</span>
+                  </div>
+                  <h3 class="portfolio-title">TruffleHunt</h3>
+                  <p class="portfolio-description">Applicazione per la ricerca e mappatura delle tartufaie, con
+                    salvataggio posizioni GPS, note e interfaccia pensata per l’utilizzo outdoor.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- TrekMap -->
+            <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="swiper project-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/pannelli_utente.png" class="img-fluid" alt="Schermata 1">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/pannelli_utente.png"
+                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
+                                title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/pannelli_utente.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/mapphp.PNG" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/web.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/web.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Paginazione + frecce del carosello -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web & Mobile</span>
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">TrekMap</h3>
+                    <p class="portfolio-description">Web app e app Android per l’escursionismo, con mappe OpenStreetMap,
+                      salvataggio waypoint, tracciamento percorsi e gestione utente con login.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- GeoTanzi -->
+            <div class="col-lg-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="swiper project-swiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/Geo_Tanz1i.jpg" class="img-fluid"
+                            alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/Geo_Tanz1i.jpg" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/Geo_Tanz1i.jpg" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/Geo_Tanzi2.jpg" class="img-fluid"
+                            alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/Geo_Tanzi2.jpg" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/Geo_Tanzi2.jpg" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/homeGeo.png" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/homeGeo.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/homeGeo.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/arearisGeo.png" class="img-fluid"
+                            alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/arearisGeo.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/arearisGeo.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/chatGeo.png" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/chatGeo.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/chatGeo.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Paginazione + frecce del carosello -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web & Mobile</span>
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">GeoTanzi</h3>
+                    <p class="portfolio-description">Web & Android app spia controllabile a distanza.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+              <!-- StudioLegaleTanzi -->
+              <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <div class="swiper project-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slide-media">
+                            <img src="assets/img/portfolio/image3.png" class="img-fluid" alt="Schermata 1">
+                            </a>
+
+                            <div class="slide-overlay">
+                              <div class="slide-actions">
+                                <a href="assets/img/portfolio/image3.png"
+                                  class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
+                                  title="Anteprima">
+                                  <i class="bi bi-eye"></i>
+                                </a>
+                                <a href="assets/img/portfolio/image3.png" class="action-btn details-btn"
+                                  title="Dettagli progetto">
+                                  <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slide-media">
+                            <img src="assets/img/portfolio/hometanzi.png" class="img-fluid" alt="Pannello Amministratore">
+                            </a>
+
+                            <div class="slide-overlay">
+                              <div class="slide-actions">
+                                <a href="assets/img/portfolio/hometanzi.png" class="glightbox action-btn preview-btn"
+                                  data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                  <i class="bi bi-eye"></i>
+                                </a>
+                                <a href="assets/img/portfolio/hometanzi.png" class="action-btn details-btn"
+                                  title="Dettagli progetto">
+                                  <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img src="assets/img/portfolio/prennotapptanzi.png" class="img-fluid" alt="Pannello Amministratore">
+                          </a>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/prennotapptanzi.png" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                              <a href="assets/img/portfolio/prennotapptanzi.png" class="action-btn details-btn"
+                                title="Dettagli progetto">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Paginazione + frecce del carosello -->
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                    <div class="portfolio-content">
+                      <div class="portfolio-meta">
+                        <span class="portfolio-category">Web & Mobile</span>
+                        <span class="portfolio-year">2025</span>
+                      </div>
+                      <h3 class="portfolio-title">Studio Legale Tanzi</h3>
+                      <p class="portfolio-description">Web app e app Android/IOS per la gestione e l'inserimento degli appuntamenti.</p>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+              <!-- KnockoutArcade -->
+              <div class="col-lg-6 portfolio-item isotope-item filter-game">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <div class="swiper project-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slide-media">
+                            <img src="assets/img/portfolio/Screenshot_20250106-173320_KnockOut.jpg" class="img-fluid" alt="Schermata 1">
+                            </a>
+
+                            <div class="slide-overlay">
+                              <div class="slide-actions">
+                                <a href="assets/img/portfolio/Screenshot_20250106-173320_KnockOut.jpg"
+                                  class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
+                                  title="Anteprima">
+                                  <i class="bi bi-eye"></i>
+                                </a>
+                                <a href="assets/img/portfolio/Screenshot_20250106-173320_KnockOut.jpg" class="action-btn details-btn"
+                                  title="Dettagli progetto">
+                                  <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                      <!-- Paginazione + frecce del carosello -->
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Game Development</span>
+                      <span class="portfolio-year">2023</span>
+                    </div>
+                    <h3 class="portfolio-title">KnockoutArcade</h3>
+                    <p class="portfolio-description">Videogioco arcade sviluppato in JavaScript con grafica 2D, livelli
+                      progressivi e sistema di punteggio, ottimizzato per browser desktop e mobile.</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+
+          </div>
+
+        </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+<section id="services" class="services section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Servizi</h2>
+    <p>Progetto e sviluppo soluzioni su misura: web app performanti, app mobile intuitive, integrazioni robuste e design curato, con attenzione a sicurezza, performance e UX.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-5">
+
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="150">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">Sviluppo Web</a></h3>
+            <p>Web app e siti dinamici in PHP/MySQL, REST API, autenticazione e ruoli, dashboard amministrative e pannelli utente.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-phone"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">App Mobile (Android/iOS)</a></h3>
+            <p>App native/hybrid con geolocalizzazione, notifiche, storage sicuro e sincronizzazione con backend.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="250">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-map"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">GIS & Geolocalizzazione</a></h3>
+            <p>Mappe interattive con Leaflet/OpenStreetMap, tracking GPS, waypoint, layer personalizzati e analisi territoriale.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-columns-gap"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">UI/UX Design</a></h3>
+            <p>Interfacce chiare e accessibili, prototipi rapidi, design system coerenti e focus sull’esperienza utente.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="350">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-plug"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">Integrazioni & API</a></h3>
+            <p>Integrazione di servizi terzi (pagamenti, mappe, email, storage), creazione di API sicure e documentate.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+        <div class="service-item">
+          <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+          <div class="service-content">
+            <h3><a href="#contact">Manutenzione & Ottimizzazione</a></h3>
+            <p>Hardening sicurezza, performance tuning, SEO tecnico, backup, monitoraggio uptime e piani di assistenza.</p>
+            <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contattami</h2>
+    <p>Hai un progetto o un’idea da sviluppare? Scrivimi due righe: ti rispondo con una proposta chiara e tempi/costi realistici.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5">
+
+        <div class="info-item">
+          <div class="info-icon"><i class="bi bi-chat-dots"></i></div>
+          <div class="info-content">
+            <h4>Parliamo del tuo progetto</h4>
+            <p>Preferisci una call o una mail? Ti va bene anche un primo confronto senza impegno.</p>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-envelope-open"></i></div>
+            <div class="detail-content">
+              <span class="detail-label">Email</span>
+              <span class="detail-value">tanziriccardo.r@libero.it</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-telephone-outbound"></i></div>
+            <div class="detail-content">
+              <span class="detail-label">Telefono</span>
+              <span class="detail-value">(+39) 3895579108</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="detail-content">
+              <span class="detail-label">Sede</span>
+              <span class="detail-value">Italia • Disponibile da remoto e on-site</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-7">
+        <div class="form-wrapper">
+          <div class="form-header"><h3>Scrivimi un messaggio</h3></div>
+
+          <!-- php-email-form compatibile con il template -->
+          <form action="forms/contact.php" method="post" class="php-email-form">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nome e Cognome</label>
+                  <input type="text" name="name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="email" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Oggetto</label>
+              <input type="text" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="projectMessage">Messaggio</label>
+              <textarea name="message" id="projectMessage" rows="5" required></textarea>
+            </div>
+
+            <!-- GDPR consenso -->
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                <label class="form-check-label" for="privacyCheck">
+                  Acconsento al trattamento dei dati per rispondere al messaggio (GDPR).
+                </label>
+              </div>
+            </div>
+
+            <div class="my-3">
+              <div class="loading">Invio in corso…</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Messaggio inviato. Ti risponderò al più presto!</div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Invia</span><i class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+<footer id="footer" class="footer light-background">
+  <div class="container">
+    <h3 class="sitename">Tanzi Riccardo</h3>
+    <p>Sviluppo software su misura: web app, mobile e GIS. Codice pulito, UX curata e risultati misurabili.</p>
+
+    <div class="social-links d-flex justify-content-center">
+      <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <!-- aggiungi altri link se vuoi -->
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <span>© <span id="year"></span></span>
+        <strong class="px-1 sitename">Tanzi Riccardo</strong>
+        <span>• Tutti i diritti riservati</span>
+      </div>
+      <div class="credits">
+        <p style="color:transparent;">Design di base: <a href="https://bootstrapmade.com/" style="color:transparent;">BootstrapMade</a></p> Realizzato da Tanzi Riccardo
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // imposta dinamicamente l'anno del copyright
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function initProjectSwipers() {
+      var carousels = document.querySelectorAll('.project-swiper');
+      carousels.forEach(function (el) {
+        new Swiper(el, {
+          loop: true,
+          speed: 500,
+          spaceBetween: 10,
+          centeredSlides: true,
+          slidesPerView: 1,
+          preloadImages: false,
+          watchSlidesProgress: true,
+          pagination: {
+            el: el.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+          navigation: {
+            nextEl: el.querySelector('.swiper-button-next'),
+            prevEl: el.querySelector('.swiper-button-prev'),
+          },
+          // Autoplay opzionale
+          // autoplay: { delay: 3000, disableOnInteraction: false },
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
