@@ -157,17 +157,23 @@
     }
   </style>
 
-  
+
   <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Tanzi Riccardo",
   "url": "https://www.tanziriccardo.it",
-  "jobTitle": "Sviluppatore Web",
-  "worksFor": "… (se hai azienda)",
-  "sameAs": ["link a profili LinkedIn, GitHub, …"]
+  "jobTitle": "Sviluppatore Web e App",
+  "description": "Developer Freelance",
+  "image": "https://www.tanziriccardo.it/images/profilo.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/tanzi-riccardo",
+    "https://github.com/tanzi-riccardo"
+  ]
 }
+</script>
+
 
   </script>
 </head>
@@ -1163,43 +1169,43 @@
       </div>
     </div>
   </footer>
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-(function() {
-  // 1️⃣ Inizializza con la tua public key (da EmailJS → Account → API keys)
-  emailjs.init({ publicKey: "2Inu3MouG0kDJjNXm" });
+  <script>
+    (function () {
+      // 1️⃣ Inizializza con la tua public key (da EmailJS → Account → API keys)
+      emailjs.init({ publicKey: "2Inu3MouG0kDJjNXm" });
 
-  // 2️⃣ Riferimenti agli elementi
-  const form = document.getElementById('contactForm');
-  const loading = form.querySelector('.loading');
-  const errorMsg = form.querySelector('.error-message');
-  const successMsg = form.querySelector('.sent-message');
+      // 2️⃣ Riferimenti agli elementi
+      const form = document.getElementById('contactForm');
+      const loading = form.querySelector('.loading');
+      const errorMsg = form.querySelector('.error-message');
+      const successMsg = form.querySelector('.sent-message');
 
-  // 3️⃣ Gestione submit
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    loading.style.display = 'block';
-    errorMsg.style.display = 'none';
-    successMsg.style.display = 'none';
+      // 3️⃣ Gestione submit
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        loading.style.display = 'block';
+        errorMsg.style.display = 'none';
+        successMsg.style.display = 'none';
 
-    const serviceID = "service_cl5xhof";  // es. "service_123abc"
-    const templateID = "template_bcrh3ju"; // es. "template_456xyz"
+        const serviceID = "service_cl5xhof";  // es. "service_123abc"
+        const templateID = "template_bcrh3ju"; // es. "template_456xyz"
 
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        loading.style.display = 'none';
-        successMsg.style.display = 'block';
-        form.reset();
-      }, (err) => {
-        loading.style.display = 'none';
-        errorMsg.textContent = 'Errore durante l’invio: ' + (err.text || 'riprova più tardi');
-        errorMsg.style.display = 'block';
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            loading.style.display = 'none';
+            successMsg.style.display = 'block';
+            form.reset();
+          }, (err) => {
+            loading.style.display = 'none';
+            errorMsg.textContent = 'Errore durante l’invio: ' + (err.text || 'riprova più tardi');
+            errorMsg.style.display = 'block';
+          });
       });
-  });
-})();
-</script>
+    })();
+  </script>
 
   <script>
     // imposta dinamicamente l'anno del copyright
