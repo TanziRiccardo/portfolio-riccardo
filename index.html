@@ -50,45 +50,82 @@
   <meta name="twitter:description" content="Portfolio di progetti web e mobile, consulenza e contatti." />
   <meta name="twitter:image" content="https://www.tanziriccardo.it/images/share.jpg" />
 
-  <!-- JSON-LD Person -->
-<!-- 🔹 Schema PERSON: Dott. Riccardo Tanzi -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "honorificPrefix": "Dott.",
-  "name": "Riccardo Tanzi",
-  "jobTitle": "Sviluppatore Software",
-  "url": "https://www.tanziriccardo.it/",
-  "image": "https://www.tanziriccardo.it/images/profilo.jpg",
-  "description": "Dott. Riccardo Tanzi, sviluppatore software che realizza soluzioni digitali personalizzate per privati e aziende. Specializzato nella progettazione e sviluppo di applicazioni web, mobile e sistemi su misura, con attenzione a performance, usabilità e design moderno.",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Tanzi Riccardo - Software Development",
-    "url": "https://www.tanziriccardo.it/"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/tanzi-riccardo",
-    "https://github.com/tanzi-riccardo"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tanziriccardo.it/",
+      "url": "https://www.tanziriccardo.it/",
+      "name": "Tanzi Riccardo – Sviluppo Software",
+      "inLanguage": "it-IT",
+      "publisher": { "@id": "https://www.tanziriccardo.it/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.tanziriccardo.it/cerca?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.tanziriccardo.it/",
+      "name": "Tanzi Riccardo - Software Development",
+      "legalName": "Tanzi Riccardo - Software Development",
+      "url": "https://www.tanziriccardo.it/",
+      "description": "Studio di sviluppo software: applicazioni web e mobile su misura per privati e aziende.",
+      "vatID": "IT12345678901",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tanziriccardo.it/favicon.ico"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/tanzi-riccardo"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "Servizi e preventivi",
+        "email": "tanziriccardo.r@libero.it",
+        "telephone": "+39 389 5579108",
+        "areaServed": "IT",
+        "availableLanguage": ["it","en"]
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Cecco Angiolieri 13",
+        "addressLocality": "Città di Castello",
+        "addressRegion": "PG",
+        "postalCode": "06012",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tanziriccardo.it/",
+      "honorificPrefix": "Dott.",
+      "name": "Riccardo Tanzi",
+      "jobTitle": "Sviluppatore Software",
+      "image": "https://www.tanziriccardo.it/assets/img/logo.png",
+      "url": "https://www.tanziriccardo.it/",
+      "worksFor": { "@id": "https://www.tanziriccardo.it/" },
+      "sameAs": [
+        "https://www.linkedin.com/in/tanzi-riccardo"
+      ],
+      "description": "Sviluppatore software specializzato in soluzioni web e mobile ad alte prestazioni."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.tanziriccardo.it/",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tanziriccardo.it/" },
+        { "@type": "ListItem", "position": 2, "name": "Progetti", "item": "https://www.tanziriccardo.it/#progetti" },
+        { "@type": "ListItem", "position": 3, "name": "Contatti", "item": "https://www.tanziriccardo.it/#contatti" }
+      ]
+    }
   ]
 }
 </script>
 
-<!-- 🔹 Schema ORGANIZATION: Tanzi Riccardo - Software Development -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Tanzi Riccardo - Software Development",
-  "url": "https://www.tanziriccardo.it/",
-  "logo": "https://www.tanziriccardo.it/images/profilo.jpg",
-  "description": "Studio di sviluppo software che realizza soluzioni digitali su misura per privati e aziende. Progetti web e mobile basati su tecnologie moderne, pensati per prestazioni e affidabilità.",
-  "sameAs": [
-    "https://www.linkedin.com/in/tanzi-riccardo",
-    "https://github.com/tanzi-riccardo"
-  ]
-}
-</script>
 
 
   </script>
