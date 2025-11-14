@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Dott. Tanzi Riccardo – Sviluppatore Software</title>
- <meta name="description" content="Dott. Riccardo Tanzi, sviluppatore software specializzato nella realizzazione di applicazioni web e mobile su misura per privati e aziende. Soluzioni digitali personalizzate e performanti.">
-<meta name="author" content="Riccardo Tanzi">
+  <meta name="description"
+    content="Dott. Riccardo Tanzi, sviluppatore software specializzato nella realizzazione di applicazioni web e mobile su misura per privati e aziende. Soluzioni digitali personalizzate e performanti.">
+  <meta name="author" content="Riccardo Tanzi">
 
   <link rel="canonical" href="https://www.tanziriccardo.it/" />
 
   <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" href="/assets/img/logo.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/assets/img/logo.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="/assets/img/logo.png" />
@@ -24,8 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 
   <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -50,7 +51,7 @@
   <meta name="twitter:description" content="Portfolio di progetti web e mobile, consulenza e contatti." />
   <meta name="twitter:image" content="https://www.tanziriccardo.it/images/share.jpg" />
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -126,140 +127,140 @@
   <meta name="referrer" content="strict-origin-when-cross-origin" />
 </head>
 
-  <style>
-    /* --- SLIDE CAROUSEL --- */
+<style>
+  /* --- SLIDE CAROUSEL --- */
 
-    /* Contenitore della media nella slide */
-    .slide-media {
-      position: relative;
-      width: 100%;
-      height: 700px !important;
-      /* regola 320–700 in base al design */
-      overflow: hidden;
-      border-radius: 12px;
-    }
+  /* Contenitore della media nella slide */
+  .slide-media {
+    position: relative;
+    width: 100%;
+    height: 700px !important;
+    /* regola 320–700 in base al design */
+    overflow: hidden;
+    border-radius: 12px;
+  }
 
-    /* Immagini responsive dentro lo slider */
-    .slide-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
+  /* Immagini responsive dentro lo slider */
+  .slide-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
 
-    /* Swiper: fa sì che le slide ereditino l’altezza del contenitore */
-    .project-swiper,
-    .project-swiper .swiper-wrapper,
-    .project-swiper .swiper-slide {
-      height: 100%;
-    }
+  /* Swiper: fa sì che le slide ereditino l’altezza del contenitore */
+  .project-swiper,
+  .project-swiper .swiper-wrapper,
+  .project-swiper .swiper-slide {
+    height: 100%;
+  }
 
-    /* Overlay dark per le slide (come le card statiche) */
-    .slide-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, .45);
-      opacity: 0;
-      transition: opacity .25s ease;
-      z-index: 8;
-      /* sotto alle frecce Swiper */
-      pointer-events: none;
-      /* non blocca swipe/click di base */
-    }
+  /* Overlay dark per le slide (come le card statiche) */
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    opacity: 0;
+    transition: opacity .25s ease;
+    z-index: 8;
+    /* sotto alle frecce Swiper */
+    pointer-events: none;
+    /* non blocca swipe/click di base */
+  }
 
-    .slide-media:hover .slide-overlay {
-      opacity: 1;
-    }
+  .slide-media:hover .slide-overlay {
+    opacity: 1;
+  }
 
-    /* Azioni centrate sopra l’overlay */
-    .slide-actions {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      gap: 12px;
-      pointer-events: auto;
-      /* i bottoni sono cliccabili */
-    }
+  /* Azioni centrate sopra l’overlay */
+  .slide-actions {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 12px;
+    pointer-events: auto;
+    /* i bottoni sono cliccabili */
+  }
 
-    .action-btn {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, .95);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: transform .18s ease, box-shadow .18s ease;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
-    }
+  .action-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .95);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+  }
 
-    .action-btn i {
-      font-size: 20px;
-      line-height: 1;
-      color: #111;
-    }
+  .action-btn i {
+    font-size: 20px;
+    line-height: 1;
+    color: #111;
+  }
 
-    .action-btn:hover {
-      transform: translateY(-2px);
-    }
+  .action-btn:hover {
+    transform: translateY(-2px);
+  }
 
-    /* Controlli Swiper sopra l’overlay */
-    .project-swiper .swiper-button-prev,
-    .project-swiper .swiper-button-next {
-      z-index: 10;
-      color: #fff;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
-    }
+  /* Controlli Swiper sopra l’overlay */
+  .project-swiper .swiper-button-prev,
+  .project-swiper .swiper-button-next {
+    z-index: 10;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  }
 
-    .project-swiper .swiper-pagination {
-      z-index: 9;
-    }
+  .project-swiper .swiper-pagination {
+    z-index: 9;
+  }
 
-    .project-swiper .swiper-pagination-bullet {
-      background: rgba(255, 255, 255, .9);
-      opacity: .7;
-    }
+  .project-swiper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, .9);
+    opacity: .7;
+  }
 
-    .project-swiper .swiper-pagination-bullet-active {
-      opacity: 1;
-    }
+  .project-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 
-    /* --- CARD PORTFOLIO GENERALE --- */
+  /* --- CARD PORTFOLIO GENERALE --- */
 
-    .portfolio-card .portfolio-image {
-      position: relative;
-      overflow: hidden;
-    }
+  .portfolio-card .portfolio-image {
+    position: relative;
+    overflow: hidden;
+  }
 
-    /* ⚠️ Limita l’altezza “fissa” SOLO alle card SENZA carosello */
-    .portfolio-card:not(.has-carousel) .portfolio-image img {
-      width: 100%;
-      height: 700px !important;
-      /* o ciò che preferisci per le card statiche */
-      object-fit: cover;
-      display: block;
-    }
+  /* ⚠️ Limita l’altezza “fissa” SOLO alle card SENZA carosello */
+  .portfolio-card:not(.has-carousel) .portfolio-image img {
+    width: 100%;
+    height: 700px !important;
+    /* o ciò che preferisci per le card statiche */
+    object-fit: cover;
+    display: block;
+  }
 
-    /* Se usi ancora l’overlay globale nelle card statiche, evita conflitti con lo slider */
-    .portfolio-card.has-carousel .portfolio-overlay {
-      pointer-events: none;
-      opacity: 0;
-    }
+  /* Se usi ancora l’overlay globale nelle card statiche, evita conflitti con lo slider */
+  .portfolio-card.has-carousel .portfolio-overlay {
+    pointer-events: none;
+    opacity: 0;
+  }
 
-    .portfolio-card .portfolio-actions {
-      pointer-events: auto;
-    }
-  </style>
-
-
+  .portfolio-card .portfolio-actions {
+    pointer-events: auto;
+  }
+</style>
 
 
 
-  </script>
+
+
+</script>
 </head>
 
 <body class="index-page">
@@ -954,6 +955,23 @@
                           </div>
                         </div>
                       </div>
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <video controls class="img-fluid">
+                            <source src="assets/img/StudioLegaleTanzi_VideoDemo.mp4" type="video/mp4">
+                            Il tuo browser non supporta il tag video.
+                          </video>
+
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/video/demo.mp4" class="glightbox action-btn preview-btn"
+                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
+                                <i class="bi bi-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <!-- Paginazione + frecce del carosello -->
                     <div class="swiper-pagination"></div>
@@ -999,7 +1017,8 @@
                       </div>
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/newsatletica.png" class="img-fluid" alt="Pannello Amministratore">
+                          <img src="assets/img/portfolio/newsatletica.png" class="img-fluid"
+                            alt="Pannello Amministratore">
                           </a>
 
                           <div class="slide-overlay">
@@ -1016,7 +1035,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                     </div>
                     <!-- Paginazione + frecce del carosello -->
                     <div class="swiper-pagination"></div>
@@ -1030,8 +1049,10 @@
                     <span class="portfolio-year">2025</span>
                   </div>
                   <h3 class="portfolio-title">Atletica Libertas Città di Castello</h3>
-                  <p class="portfolio-description">Sito web vetrina realizzato per l’associazione sportiva A.S.D. Atletica Libertas Città di Castello,
-      con gestione dinamica di <strong>notizie ed eventi da Google Sheets</strong>, mappa interattiva e design responsive. </p>
+                  <p class="portfolio-description">Sito web vetrina realizzato per l’associazione sportiva A.S.D.
+                    Atletica Libertas Città di Castello,
+                    con gestione dinamica di <strong>notizie ed eventi da Google Sheets</strong>, mappa interattiva e
+                    design responsive. </p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -1311,7 +1332,8 @@
         </div>
         <div class="credits">
           <p style="color:transparent;">Design di base: <a href="https://bootstrapmade.com/"
-              style="color:transparent;">BootstrapMade</a></p> Realizzato da <a href="https://tanziriccardo.it/">Tanzi Riccardo</a>
+              style="color:transparent;">BootstrapMade</a></p> Realizzato da <a href="https://tanziriccardo.it/">Tanzi
+            Riccardo</a>
         </div>
       </div>
     </div>
