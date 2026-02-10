@@ -2083,7 +2083,7 @@ section,
 
 @media (max-width: 768px) {
   .portfolio .portfolio-image img {
-    height: 250px;
+    
   }
 }
 
@@ -2201,12 +2201,12 @@ section,
 }
 
 .portfolio .isotope-container .portfolio-item:nth-child(4) .portfolio-image img {
-  height: 280px;
+  
 }
 
 @media (max-width: 768px) {
   .portfolio .isotope-container .portfolio-item:nth-child(4) .portfolio-image img {
-    height: 250px;
+    
   }
 }
 
