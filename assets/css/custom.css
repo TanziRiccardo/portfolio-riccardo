@@ -22,7 +22,6 @@
     .header.dark-background {
       background: rgba(0, 0, 0, .35);
       backdrop-filter: blur(14px);
-      border-right: 1px solid var(--stroke);
     }
 
     .hero.section {
@@ -117,6 +116,7 @@
       border: 1px solid var(--stroke);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      padding:20px;
     }
 
     /* ======= Portfolio / Swiper ======= */
