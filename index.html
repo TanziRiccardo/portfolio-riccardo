@@ -1,57 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Dott. Tanzi Riccardo – Sviluppatore Software</title>
-  <!-- Meta SEO base -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Dott. Riccardo Tanzi, sviluppatore software specializzato nella realizzazione di applicazioni web e mobile su misura per privati e aziende. Soluzioni digitali personalizzate, performanti e moderne.">
   <meta name="keywords"
     content="Riccardo Tanzi, sviluppatore software, web developer, mobile developer, app android, app ios, siti web, applicazioni web, software su misura, programmatore">
   <meta name="author" content="Riccardo Tanzi">
-  <link rel="canonical" href="https://www.tanziriccardo.it/">
-
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Dott. Tanzi Riccardo – Sviluppatore Software">
-  <meta property="og:description"
-    content="Sviluppatore software specializzato in applicazioni web e mobile su misura, per aziende e professionisti.">
-  <meta property="og:url" content="https://www.tanziriccardo.it/">
-  <meta property="og:site_name" content="Tanzi Riccardo – Software Developer">
-  <meta property="og:image" content="https://www.tanziriccardo.it/assets/img/preview.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dott. Tanzi Riccardo – Sviluppatore Software">
-  <meta name="twitter:description"
-    content="Realizzazione di applicazioni web e mobile veloci, moderne e personalizzate.">
-  <meta name="twitter:image" content="https://www.tanziriccardo.it/assets/img/preview.jpg">
-  <meta name="twitter:creator" content="@">
-
-
-  <!-- Favicons -->
-  <!-- Mobile & UX -->
-  <meta name="theme-color" content="#0a0a0a">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://www.tanziriccardo.it/" />
 
   <!-- Robots -->
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Theme / PWA -->
+  <meta name="theme-color" content="#070A10" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tanzi Riccardo – Sviluppo Software" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:url" content="https://www.tanziriccardo.it/" />
+  <meta property="og:title" content="Dott. Tanzi Riccardo – Sviluppatore Software" />
+  <meta property="og:description" content="Web app, app mobile e integrazioni su misura. Soluzioni moderne, performanti e sicure." />
+  <meta property="og:image" content="https://www.tanziriccardo.it/assets/img/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dott. Tanzi Riccardo – Sviluppatore Software" />
+  <meta name="twitter:description" content="Web app, app mobile e integrazioni su misura. Soluzioni moderne, performanti e sicure." />
+  <meta name="twitter:image" content="https://www.tanziriccardo.it/assets/img/preview.jpg" />
 
   <!-- Favicon -->
-  <link rel="icon" href="https://www.tanziriccardo.it/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="https://www.tanziriccardo.it/favicon.ico">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="https://www.tanziriccardo.it/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://www.tanziriccardo.it/favicon.ico" />
 
-  <meta name="theme-color" content="#0f172a" />
-
-  <!-- Preconnect & Fonts (riduci i pesi ai soli usati) -->
+  <!-- Preconnect & Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -68,58 +59,33 @@
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:site_name" content="Tanzi Riccardo" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.tanziriccardo.it/" />
-  <meta property="og:title" content="Tanzi Riccardo — Sviluppatore Web & App" />
-  <meta property="og:description" content="Portfolio di progetti web e mobile, consulenza e contatti." />
-  <meta property="og:image" content="https://www.tanziriccardo.it/images/share.jpg" />
-  <meta property="og:locale" content="it_IT" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tanzi Riccardo — Sviluppatore Web & App" />
-  <meta name="twitter:description" content="Portfolio di progetti web e mobile, consulenza e contatti." />
-  <meta name="twitter:image" content="https://www.tanziriccardo.it/images/share.jpg" />
-
+  <!-- JSON-LD -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.tanziriccardo.it/",
+      "@id": "https://www.tanziriccardo.it/#website",
       "url": "https://www.tanziriccardo.it/",
       "name": "Tanzi Riccardo – Sviluppo Software",
       "inLanguage": "it-IT",
-      "publisher": { "@id": "https://www.tanziriccardo.it/#org" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.tanziriccardo.it/cerca?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "publisher": { "@id": "https://www.tanziriccardo.it/#org" }
     },
     {
       "@type": "Organization",
-      "@id": "https://www.tanziriccardo.it/",
+      "@id": "https://www.tanziriccardo.it/#org",
       "name": "Tanzi Riccardo - Software Development",
-      "legalName": "Tanzi Riccardo - Software Development",
       "url": "https://www.tanziriccardo.it/",
-      "description": "Studio di sviluppo software: applicazioni web e mobile su misura per privati e aziende.",
-      "vatID": "IT12345678901",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.tanziriccardo.it/favicon.ico"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/tanzi-riccardo"
-      ],
+      "logo": { "@type": "ImageObject", "url": "https://www.tanziriccardo.it/favicon.ico" },
+      "sameAs": ["https://www.linkedin.com/in/tanzi-riccardo"],
       "contactPoint": [{
         "@type": "ContactPoint",
         "contactType": "Servizi e preventivi",
         "email": "tanziriccardo.r@libero.it",
         "telephone": "+39 389 5579108",
         "areaServed": "IT",
-        "availableLanguage": ["it","en"]
+        "availableLanguage": ["it", "en"]
       }],
       "address": {
         "@type": "PostalAddress",
@@ -132,239 +98,103 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.tanziriccardo.it/",
+      "@id": "https://www.tanziriccardo.it/#person",
       "honorificPrefix": "Dott.",
       "name": "Riccardo Tanzi",
       "jobTitle": "Sviluppatore Software",
-      "image": "https://www.tanziriccardo.it/assets/img/logo.png",
       "url": "https://www.tanziriccardo.it/",
-      "worksFor": { "@id": "https://www.tanziriccardo.it/" },
-      "sameAs": [
-        "https://www.linkedin.com/in/tanzi-riccardo"
-      ],
+      "image": "https://www.tanziriccardo.it/assets/img/logo.png",
+      "worksFor": { "@id": "https://www.tanziriccardo.it/#org" },
+      "sameAs": ["https://www.linkedin.com/in/tanzi-riccardo"],
       "description": "Sviluppatore software specializzato in soluzioni web e mobile ad alte prestazioni."
     }
   ]
 }
-</script>
-
-
-
   </script>
 
-  <!-- (Opzionale) Security/Privacy -->
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';"> -->
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-</head>
 
-<style>
-  /* --- SLIDE CAROUSEL --- */
-
-  /* Contenitore della media nella slide */
-  .slide-media {
-    position: relative;
-    width: 100%;
-    height: 700px !important;
-    /* regola 320–700 in base al design */
-    overflow: hidden;
-    border-radius: 12px;
-  }
-
-  /* Immagini responsive dentro lo slider */
-  .slide-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-
-  /* Swiper: fa sì che le slide ereditino l’altezza del contenitore */
-  .project-swiper,
-  .project-swiper .swiper-wrapper,
-  .project-swiper .swiper-slide {
-    height: 100%;
-  }
-
-  /* Overlay dark per le slide (come le card statiche) */
-  .slide-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, .45);
-    opacity: 0;
-    transition: opacity .25s ease;
-    z-index: 8;
-    /* sotto alle frecce Swiper */
-    pointer-events: none;
-    /* non blocca swipe/click di base */
-  }
-
-  .slide-media:hover .slide-overlay {
-    opacity: 1;
-  }
-
-  /* Azioni centrate sopra l’overlay */
-  .slide-actions {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 12px;
-    pointer-events: auto;
-    /* i bottoni sono cliccabili */
-  }
-
-  .action-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, .95);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform .18s ease, box-shadow .18s ease;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
-  }
-
-  .action-btn i {
-    font-size: 20px;
-    line-height: 1;
-    color: #111;
-  }
-
-  .action-btn:hover {
-    transform: translateY(-2px);
-  }
-
-  /* Controlli Swiper sopra l’overlay */
-  .project-swiper .swiper-button-prev,
-  .project-swiper .swiper-button-next {
-    z-index: 10;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
-  }
-
-  .project-swiper .swiper-pagination {
-    z-index: 9;
-  }
-
-  .project-swiper .swiper-pagination-bullet {
-    background: rgba(255, 255, 255, .9);
-    opacity: .7;
-  }
-
-  .project-swiper .swiper-pagination-bullet-active {
-    opacity: 1;
-  }
-
-  /* --- CARD PORTFOLIO GENERALE --- */
-
-  .portfolio-card .portfolio-image {
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* ⚠️ Limita l’altezza “fissa” SOLO alle card SENZA carosello */
-  .portfolio-card:not(.has-carousel) .portfolio-image img {
-    width: 100%;
-    height: 700px !important;
-    /* o ciò che preferisci per le card statiche */
-    object-fit: cover;
-    display: block;
-  }
-
-  /* Se usi ancora l’overlay globale nelle card statiche, evita conflitti con lo slider */
-  .portfolio-card.has-carousel .portfolio-overlay {
-    pointer-events: none;
-    opacity: 0;
-  }
-
-  .portfolio-card .portfolio-actions {
-    pointer-events: auto;
-  }
-</style>
-
-
-
-
-
-</script>
+  <!-- ======= PREMIUM UI (puoi spostarlo in assets/css/custom.css) ======= -->
+  <style>
+   
+  </style>
 </head>
 
 <body class="index-page">
 
+  <!-- ======= Header ======= -->
   <header id="header" class="header dark-background d-flex flex-column justify-content-between">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="header-top">
       <div class="profile-img">
-        <img src="assets/img/logo.png" alt="" class="img-fluid">
+        <img src="assets/img/logo.png" alt="Logo Dott. Tanzi Riccardo" class="img-fluid" />
       </div>
 
-      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-        <h1 class="sitename">Dott.Tanzi Riccardo</h1>
+      <a href="#hero" class="logo d-flex align-items-center justify-content-center">
+        <h1 class="sitename">Dott. Tanzi Riccardo</h1>
       </a>
-
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Chi sono</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servizi</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contatti</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Chi sono</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i>Servizi</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contatti</a></li>
       </ul>
     </nav>
 
     <div class="social-links text-center">
+      <!-- metti qui: LinkedIn / GitHub -->
+      <!-- <a href="..." class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+      <!-- <a href="..." class="github"><i class="bi bi-github"></i></a> -->
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- ======= Hero ======= -->
     <section id="hero" class="hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">
-                Software Developer
-              </h1>
+              <h1 data-aos="fade-up" data-aos-delay="200">Sviluppatore Software</h1>
+
+              <p class="hero-kicker" data-aos="fade-up" data-aos-delay="240">
+                Web app • Mobile • Integrazioni • GIS
+              </p>
+              <div data-aos="fade-up" data-aos-delay="260">
+                <span class="badge-soft">PHP 8+</span>
+                <span class="badge-soft">MySQL</span>
+                <span class="badge-soft">Android</span>
+                <span class="badge-soft">iOS</span>
+                <span class="badge-soft">Leaflet/OSM</span>
+              </div>
+
               <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
                 Sviluppo soluzioni digitali che uniscono tecnologia e usabilità. Mi occupo di progettazione e sviluppo
                 di applicazioni web e mobile con un approccio attento alla qualità del codice e all’esperienza utente.
               </p>
+
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                <a href="#portfolio" class="btn-primary">I miei Progetti</a>
-                <a href="#contact" class="btn-secondary">Contattami</a>
+                <a href="#portfolio" class="btn-primary">
+                  <i class="bi bi-rocket-takeoff"></i> I miei progetti
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <i class="bi bi-chat-dots"></i> Contattami
+                </a>
               </div>
-              <!-- <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                <div class="stat-item">
-                  <span class="stat-number">50+</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">3+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">25+</span>
-                  <span class="stat-label">Happy Clients</span>
-                </div>
-              </div>-->
             </div>
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2">
             <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
               <div class="image-wrapper">
-                <img src="assets/img/logo.png" alt="Creative Designer Portfolio" class="img-fluid main-image">
+                <img src="assets/img/logo.png" alt="Dott. Tanzi Riccardo" class="img-fluid main-image" />
+
                 <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
                   <i class="bi bi-palette"></i>
                   <span>UI/UX Design</span>
@@ -373,34 +203,24 @@
                   <i class="bi bi-code-square"></i>
                   <span>Web &amp; App Development</span>
                 </div>
-                <!-- <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
-                  <i class="bi bi-camera"></i>
-                  <span>Photography</span>
-                </div>-->
               </div>
             </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-
-
-    <!-- Resume Section -->
+    <!-- ======= Resume ======= -->
     <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Curriculum</h2>
         <p>Il mio percorso formativo e professionale nel mondo dello sviluppo software, dalla formazione tecnica alla
           realizzazione di soluzioni digitali complete e su misura.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-start">
+
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
             <div class="professional-journey">
               <div class="section-intro">
@@ -427,7 +247,7 @@
                     <div class="key-achievements">
                       <span class="achievement-tag">HTML, CSS, JavaScript, PHP, MySQL</span>
                       <span class="achievement-tag">Android (Java)</span>
-                      <span class="achievement-tag">IOS (Swift/Java)</span>
+                      <span class="achievement-tag">iOS (Swift)</span>
                     </div>
                   </div>
                 </div>
@@ -441,7 +261,7 @@
                     <h3>Progetti Personali e Formativi</h3>
                     <h4>Ambito Web e Mobile</h4>
                     <p>Realizzazione di siti web dinamici, sistemi di autenticazione, e app con funzioni di logistica e
-                      tracking GPS, utilizzando Android Studio.</p>
+                      tracking GPS.</p>
                   </div>
                 </div>
 
@@ -464,9 +284,7 @@
 
                 <div class="education-card primary" data-aos="zoom-in" data-aos-delay="300">
                   <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-laptop"></i>
-                    </div>
+                    <div class="degree-icon"><i class="bi bi-laptop"></i></div>
                     <div class="degree-info">
                       <h3>Laurea Triennale in Informatica</h3>
                       <p class="institution">Università degli Studi di Perugia</p>
@@ -477,20 +295,17 @@
                     <p>Corso focalizzato su programmazione, basi di dati, sviluppo web e mobile, sicurezza informatica e
                       progettazione di sistemi software.</p>
                     <div class="honors">
-                      <span class="honor-badge">Tesi su studio, progettazione e sviluppo di applicazioni web e mobile
-                        per il tracciamento geospaziale</span>
+                      <span class="honor-badge">Tesi: progettazione e sviluppo di applicazioni web e mobile per tracciamento geospaziale</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="education-card" data-aos="zoom-in" data-aos-delay="350">
                   <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-award"></i>
-                    </div>
+                    <div class="degree-icon"><i class="bi bi-award"></i></div>
                     <div class="degree-info">
                       <h3>Diploma ITIS – Informatica e Telecomunicazioni</h3>
-                      <p class="institution">Istituto Tecnico Tecnologico “Franchetti Salviani” – Città di Castello</p>
+                      <p class="institution">ITT “Franchetti Salviani” – Città di Castello</p>
                       <span class="graduation-year">2016 - 2021</span>
                     </div>
                   </div>
@@ -501,7 +316,7 @@
                 </div>
 
                 <div class="certification-section" data-aos="fade-up" data-aos-delay="400">
-                  <h4>Certificazioni e Competenze</h4>
+                  <h4>Competenze</h4>
                   <div class="certifications">
                     <div class="cert-item">
                       <i class="bi bi-patch-check"></i>
@@ -520,8 +335,8 @@
                     <div class="cert-item">
                       <i class="bi bi-patch-check"></i>
                       <div class="cert-details">
-                        <span class="cert-name">Gestione Database MySQL e Sicurezza</span>
-                        <span class="cert-provider">Progetti accademici e personali • 2022</span>
+                        <span class="cert-name">MySQL, Sicurezza e Hardening</span>
+                        <span class="cert-provider">Progetti accademici e personali</span>
                       </div>
                     </div>
                   </div>
@@ -530,26 +345,20 @@
               </div>
             </div>
           </div>
+
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-
-    <!-- Portfolio Section -->
+    <!-- ======= Portfolio ======= -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Una selezione dei miei progetti più significativi, dallo sviluppo web e mobile alle applicazioni con
-          geolocalizzazione e interfacce interattive. Ogni progetto rappresenta una combinazione di creatività, logica e
-          passione per il codice ben scritto.</p>
-      </div><!-- End Section Title -->
+        <p>Una selezione dei miei progetti più significativi. Ogni progetto rappresenta una combinazione di creatività,
+          logica e passione per il codice ben scritto.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="200">
@@ -565,760 +374,541 @@
 
             <!-- LogiTrack -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          
-                          <img src="assets/img/portfolio/tutto.webp" class="img-fluid" alt="Insieme">
-                          
-
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/tutto.webp" alt="LogiTrack - Overview">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/tutto.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/tutto.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/tutto.webp" class="glightbox action-btn"
+                                data-gallery="gallery-logitrack" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/IMG_4868.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/IMG_4868.webp" alt="LogiTrack - Admin">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/operai_insieme.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/operai_insieme.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/IMG_4868.webp" class="glightbox action-btn"
+                                data-gallery="gallery-logitrack" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/amm.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/amm.webp" alt="LogiTrack - Dashboard">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/amm.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/amm.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/amm.webp" class="glightbox action-btn"
+                                data-gallery="gallery-logitrack" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/pos-amm.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/pos-amm.webp" alt="LogiTrack - POS">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/pos-amm.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/pos-amm.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/pos-amm.webp" class="glightbox action-btn"
+                                data-gallery="gallery-logitrack" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-
-                    <!-- Paginazione + frecce del carosello -->
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
                 </div>
+
                 <div class="portfolio-content">
                   <div class="portfolio-meta">
                     <span class="portfolio-category">Web & Mobile</span>
                     <span class="portfolio-year">2025</span>
                   </div>
                   <h3 class="portfolio-title">LogiTrack</h3>
-                  <p class="portfolio-description">Piattaforma per aziende di consegne che gestisce turni, pause e
-                    tracciamento GPS dei furgoni in tempo reale, con interfaccia web e app Android. Alcune immagini nel
-                    carosello.</p>
+                  <p class="portfolio-description">
+                    Piattaforma per aziende di consegne: turni, pause e tracciamento GPS in tempo reale con interfaccia web e app Android.
+                  </p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <!-- TruffleHunt -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/Pannelli_Utente_mobile.webp" class="img-fluid"
-                            alt="Schermata 1">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/Pannelli_Utente_mobile.webp" alt="TruffleHunt - Mobile">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/Pannelli_Utente_mobile.webp"
-                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
-                                title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/Pannelli_Utente_mobile.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/Pannelli_Utente_mobile.webp" class="glightbox action-btn"
+                                data-gallery="gallery-trufflehunt" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/IMG_4900.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/IMG_4900.webp" alt="TruffleHunt - Admin">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/INSIEME.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/INSIEME.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/IMG_4900.webp" class="glightbox action-btn"
+                                data-gallery="gallery-trufflehunt" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-
-                    <!-- Paginazione + frecce del carosello -->
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
                 </div>
+
                 <div class="portfolio-content">
                   <div class="portfolio-meta">
                     <span class="portfolio-category">Web & Mobile</span>
                     <span class="portfolio-year">2025</span>
                   </div>
                   <h3 class="portfolio-title">TruffleHunt</h3>
-                  <p class="portfolio-description">Applicazione per la ricerca e mappatura delle tartufaie, con
-                    salvataggio posizioni GPS, note e interfaccia pensata per l’utilizzo outdoor.</p>
+                  <p class="portfolio-description">
+                    App per ricerca e mappatura tartufaie: posizioni GPS, note e interfaccia pensata per utilizzo outdoor.
+                  </p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <!-- TrekMap -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/pannelli_utente.webp" class="img-fluid" alt="Schermata 1">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/pannelli_utente.webp" alt="TrekMap - Utente">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/pannelli_utente.webp"
-                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
-                                title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/pannelli_utente.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/pannelli_utente.webp" class="glightbox action-btn"
+                                data-gallery="gallery-trekmap" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/mapphp.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/mapphp.webp" alt="TrekMap - Mappa">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/web.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/web.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/mapphp.webp" class="glightbox action-btn"
+                                data-gallery="gallery-trekmap" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- Paginazione + frecce del carosello -->
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
-                  <div class="portfolio-content">
-                    <div class="portfolio-meta">
-                      <span class="portfolio-category">Web & Mobile</span>
-                      <span class="portfolio-year">2025</span>
-                    </div>
-                    <h3 class="portfolio-title">TrekMap</h3>
-                    <p class="portfolio-description">Web app e app Android per l’escursionismo, con mappe OpenStreetMap,
-                      salvataggio waypoint, tracciamento percorsi e gestione utente con login.</p>
+                </div>
+
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="portfolio-category">Web & Mobile</span>
+                    <span class="portfolio-year">2025</span>
                   </div>
+                  <h3 class="portfolio-title">TrekMap</h3>
+                  <p class="portfolio-description">
+                    Web app e Android app per escursionismo: mappe OpenStreetMap, waypoint, tracking percorsi e login utente.
+                  </p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <!-- GeoTanzi -->
+            <!-- GeoTanzi (descrizione resa "professionale") -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
 
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/Geo_Tanz1i.jpg" class="img-fluid"
-                            alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/Geo_Tanz1i.jpg" alt="GeoTanzi - Screen 1">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/Geo_Tanz1i.jpg" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/Geo_Tanz1i.jpg" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/Geo_Tanz1i.jpg" class="glightbox action-btn"
+                                data-gallery="gallery-geotanzi" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/Geo_Tanzi2.jpg" class="img-fluid"
-                            alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/Geo_Tanzi2.jpg" alt="GeoTanzi - Screen 2">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/Geo_Tanzi2.jpg" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/Geo_Tanzi2.jpg" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/Geo_Tanzi2.jpg" class="glightbox action-btn"
+                                data-gallery="gallery-geotanzi" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/homeGeo.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/homeGeo.webp" alt="GeoTanzi - Home">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/homeGeo.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/homeGeo.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/homeGeo.webp" class="glightbox action-btn"
+                                data-gallery="gallery-geotanzi" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/arearisGeo.webp" class="img-fluid"
-                            alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/arearisGeo.webp" alt="GeoTanzi - Area riservata">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/arearisGeo.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/arearisGeo.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/arearisGeo.webp" class="glightbox action-btn"
+                                data-gallery="gallery-geotanzi" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/chatGeo.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/chatGeo.webp" alt="GeoTanzi - Chat">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/chatGeo.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/chatGeo.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/chatGeo.webp" class="glightbox action-btn"
+                                data-gallery="gallery-geotanzi" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
-                    <!-- Paginazione + frecce del carosello -->
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
-                  <div class="portfolio-content">
-                    <div class="portfolio-meta">
-                      <span class="portfolio-category">Web & Mobile</span>
-                      <span class="portfolio-year">2024</span>
-                    </div>
-                    <h3 class="portfolio-title">GeoTanzi</h3>
-                    <p class="portfolio-description">Web & Android app spia controllabile a distanza.</p><br>
+                </div>
+
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="portfolio-category">Web & Mobile</span>
+                    <span class="portfolio-year">2024</span>
                   </div>
+                  <h3 class="portfolio-title">GeoTanzi</h3>
+                  <p class="portfolio-description">Sistema di geolocalizzazione e gestione remota dispositivi (uso con consenso/autorizzazione).</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-            <!-- StudioLegaleTanzi -->
+            </div>
+
+            <!-- Studio Legale Tanzi -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/image3.webp" class="img-fluid" alt="Schermata 1">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/image3.webp" alt="Studio Legale - Schermata 1">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/image3.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/image3.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/image3.webp" class="glightbox action-btn"
+                                data-gallery="gallery-studiolegale" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/hometanzi.webp" class="img-fluid" alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/hometanzi.webp" alt="Studio Legale - Home">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/hometanzi.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/hometanzi.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/hometanzi.webp" class="glightbox action-btn"
+                                data-gallery="gallery-studiolegale" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/prennotapptanzi.webp" class="img-fluid"
-                            alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/prennotapptanzi.webp" alt="Studio Legale - Prenotazioni">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/prennotapptanzi.webp"
-                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
-                                title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/prennotapptanzi.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/prennotapptanzi.webp" class="glightbox action-btn"
+                                data-gallery="gallery-studiolegale" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <video controls class="img-fluid">
-                            <source src="assets/img/StudioLegaleTanzi_VideoDemo.mp4" type="video/mp4">
-                            Il tuo browser non supporta il tag video.
+                          <video autoplay muted loop playsinline preload="metadata">
+                            <source src="assets/img/StudioLegaleTanzi_VideoDemo.mp4" type="video/mp4" />
                           </video>
-
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/StudioLegaleTanzi_VideoDemo.mp4" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
+                              <a href="assets/img/StudioLegaleTanzi_VideoDemo.mp4" class="glightbox action-btn"
+                                data-gallery="gallery-studiolegale" title="Apri video"><i class="bi bi-play-circle"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
-                    <!-- Paginazione + frecce del carosello -->
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
                 </div>
+
                 <div class="portfolio-content">
                   <div class="portfolio-meta">
                     <span class="portfolio-category">Web & Mobile</span>
                     <span class="portfolio-year">2025</span>
                   </div>
                   <h3 class="portfolio-title">Studio Legale Tanzi</h3>
-                  <p class="portfolio-description">Web app e app Android/IOS per la gestione e l'inserimento degli
-                    appuntamenti. <br> <br> <br></p>
+                  <p class="portfolio-description">Web app e app Android/iOS per gestione appuntamenti e anagrafiche, con dashboard e area riservata.</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-            <!-- AtleticaLibertas -->
+            </div>
+
+            <!-- Atletica Libertas -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/homeatletica.webp" class="img-fluid" alt="Schermata 1">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/homeatletica.webp" alt="Atletica - Home">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/homeatletica.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/homeatletica.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/homeatletica.webp" class="glightbox action-btn"
+                                data-gallery="gallery-atletica" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/newsatletica.webp" class="img-fluid"
-                            alt="Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/newsatletica.webp" alt="Atletica - News">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/newsatletica.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/newsatletica.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/newsatletica.webp" class="glightbox action-btn"
+                                data-gallery="gallery-atletica" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
-
                     </div>
-                    <!-- Paginazione + frecce del carosello -->
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
                 </div>
+
                 <div class="portfolio-content">
                   <div class="portfolio-meta">
                     <span class="portfolio-category">Web Development</span>
                     <span class="portfolio-year">2025</span>
                   </div>
                   <h3 class="portfolio-title">Atletica Libertas Città di Castello</h3>
-                  <p class="portfolio-description">Sito web vetrina realizzato per l’associazione sportiva A.S.D.
-                    Atletica Libertas Città di Castello,
-                    con gestione dinamica di <strong>notizie ed eventi da Google Sheets</strong>, mappa interattiva e
-                    design responsive. </p>
+                  <p class="portfolio-description">
+                    Sito vetrina per A.S.D. Atletica Libertas: news/eventi da Google Sheets, mappa interattiva, design responsive.
+                  </p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-             <!-- Enoteca Ricciardi Shop -->
+            <!-- Enoteca Ricciardi Shop -->
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-android">
-              <div class="portfolio-card">
+              <div class="portfolio-card has-carousel">
                 <div class="portfolio-image">
                   <div class="swiper project-swiper">
                     <div class="swiper-wrapper">
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop.webp" class="img-fluid" alt="Schermata 1">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop.webp" alt="Enoteca - Home">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop.webp"
-                                class="glightbox action-btn preview-btn" data-gallery="portfolio-gallery-logitrack"
-                                title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_index.webp" class="img-fluid" alt="Estratto Home">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_index.webp" alt="Enoteca - Estratto Index">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_index.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_index.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_index.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_shop.webp" class="img-fluid" alt="Estratto Shop">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_shop.webp" alt="Enoteca - Shop">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_shop.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_shop.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_shop.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
-                       <div class="swiper-slide">
-                        <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto1.webp" class="img-fluid" alt="Estratto Prodotto">
-                          </a>
 
-                          <div class="slide-overlay">
-                            <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto1.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto1.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto2.webp" class="img-fluid" alt="Estratto Prodotto">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto1.webp" alt="Enoteca - Prodotto 1">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto2.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto2.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto1.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto3.webp" class="img-fluid" alt="Estratto Prodotto">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto2.webp" alt="Enoteca - Prodotto 2">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto3.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto3.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto2.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_carrello.webp" class="img-fluid" alt="Carrello">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_prodotto3.webp" alt="Enoteca - Prodotto 3">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_carrello.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_carrello.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_prodotto3.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_checkout.webp" class="img-fluid" alt="Estratto Checkout">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_carrello.webp" alt="Enoteca - Carrello">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_checkout.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_checkout.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_carrello.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_shop_areautente.webp" class="img-fluid" alt="Estratto Area Utente">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_checkout.webp" alt="Enoteca - Checkout">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_areautente.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_areautente.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_checkout.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <div class="swiper-slide">
                         <div class="slide-media">
-                          <img src="assets/img/portfolio/enoteca_ricciardi_dashboard.webp" class="img-fluid" alt="Estratto Pannello Amministratore">
-                          </a>
-
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_shop_areautente.webp" alt="Enoteca - Area Utente">
                           <div class="slide-overlay">
                             <div class="slide-actions">
-                              <a href="assets/img/portfolio/enoteca_ricciardi_dashboard.webp" class="glightbox action-btn preview-btn"
-                                data-gallery="portfolio-gallery-logitrack" title="Anteprima">
-                                <i class="bi bi-eye"></i>
-                              </a>
-                              <a href="assets/img/portfolio/enoteca_ricciardi_dashboard.webp" class="action-btn details-btn"
-                                title="Dettagli progetto">
-                                <i class="bi bi-arrow-up-right"></i>
-                              </a>
+                              <a href="assets/img/portfolio/enoteca_ricciardi_shop_areautente.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
+                      <div class="swiper-slide">
+                        <div class="slide-media">
+                          <img loading="lazy" decoding="async" src="assets/img/portfolio/enoteca_ricciardi_dashboard.webp" alt="Enoteca - Dashboard Admin">
+                          <div class="slide-overlay">
+                            <div class="slide-actions">
+                              <a href="assets/img/portfolio/enoteca_ricciardi_dashboard.webp" class="glightbox action-btn"
+                                data-gallery="gallery-enoteca" title="Anteprima"><i class="bi bi-eye"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-                    <!-- Paginazione + frecce del carosello -->
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
                 </div>
-                  <div class="portfolio-content">
-                    <div class="portfolio-meta">
-                      <span class="portfolio-category">Web Development</span>
-                      <span class="portfolio-year">2026</span>
-                    </div>
-                    <h3 class="portfolio-title">Enoteca Ricciardi Shop</h3>
-                    <p class="portfolio-description">Gestionale, shop realizzato per una realtà locale, Enoteca Ricciardi.</p>
+
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="portfolio-category">Web Development</span>
+                    <span class="portfolio-year">2026</span>
                   </div>
+                  <h3 class="portfolio-title">Enoteca Ricciardi Shop</h3>
+                  <p class="portfolio-description">Gestionale e shop completo realizzato per Enoteca Ricciardi.</p>
                 </div>
-            </div><!-- End Portfolio Item -->
-            <!-- KnockoutArcade -->
-            <!-- End Portfolio Item -->
+              </div>
+            </div>
 
           </div><!-- End Portfolio Container -->
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
-
-
-    <!-- Services Section -->
-    <!-- Services Section -->
+    <!-- ======= Services ======= -->
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Servizi</h2>
@@ -1334,8 +924,7 @@
               <div class="service-icon"><i class="bi bi-code-slash"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">Sviluppo Web</a></h3>
-                <p>Web app e siti dinamici in PHP/MySQL, REST API, autenticazione e ruoli, dashboard amministrative e
-                  pannelli utente.</p>
+                <p>Web app e siti dinamici in PHP/MySQL, REST API, autenticazione e ruoli, dashboard amministrative e pannelli utente.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1346,8 +935,7 @@
               <div class="service-icon"><i class="bi bi-phone"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">App Mobile (Android/iOS)</a></h3>
-                <p>App native/hybrid con geolocalizzazione, notifiche, storage sicuro e sincronizzazione con backend.
-                </p>
+                <p>App native/hybrid con geolocalizzazione, notifiche, storage sicuro e sincronizzazione con backend.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1358,8 +946,7 @@
               <div class="service-icon"><i class="bi bi-map"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">GIS & Geolocalizzazione</a></h3>
-                <p>Mappe interattive con Leaflet/OpenStreetMap, tracking GPS, waypoint, layer personalizzati e analisi
-                  territoriale.</p>
+                <p>Mappe interattive con Leaflet/OpenStreetMap, tracking GPS, waypoint, layer personalizzati e analisi territoriale.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1370,8 +957,7 @@
               <div class="service-icon"><i class="bi bi-columns-gap"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">UI/UX Design</a></h3>
-                <p>Interfacce chiare e accessibili, prototipi rapidi, design system coerenti e focus sull’esperienza
-                  utente.</p>
+                <p>Interfacce chiare e accessibili, prototipi rapidi, design system coerenti e focus sull’esperienza utente.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1382,8 +968,7 @@
               <div class="service-icon"><i class="bi bi-plug"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">Integrazioni & API</a></h3>
-                <p>Integrazione di servizi terzi (pagamenti, mappe, email, storage), creazione di API sicure e
-                  documentate.</p>
+                <p>Integrazione di servizi terzi (pagamenti, mappe, email, storage), creazione di API sicure e documentate.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1394,8 +979,7 @@
               <div class="service-icon"><i class="bi bi-shield-check"></i></div>
               <div class="service-content">
                 <h3><a href="#contact">Manutenzione & Ottimizzazione</a></h3>
-                <p>Hardening sicurezza, performance tuning, SEO tecnico, backup, monitoraggio uptime e piani di
-                  assistenza.</p>
+                <p>Hardening sicurezza, performance tuning, SEO tecnico, backup, monitoraggio uptime e piani di assistenza.</p>
                 <a href="#contact" class="read-more"><span>Parliamone</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1405,21 +989,17 @@
       </div>
     </section>
 
-
-
-
-    <!-- Contact Section -->
+    <!-- ======= Contact ======= -->
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contattami</h2>
-        <p>Hai un progetto o un’idea da sviluppare? Scrivimi due righe: ti rispondo con una proposta chiara e
-          tempi/costi realistici.</p>
+        <p>Hai un progetto o un’idea da sviluppare? Scrivimi due righe: ti rispondo con una proposta chiara e tempi/costi realistici.</p>
       </div>
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5">
 
+          <div class="col-lg-5">
             <div class="info-item">
               <div class="info-icon"><i class="bi bi-chat-dots"></i></div>
               <div class="info-content">
@@ -1428,11 +1008,11 @@
               </div>
             </div>
 
-            <div class="contact-details">
+            <div class="contact-details mt-3">
               <div class="detail-item">
                 <div class="detail-icon"><i class="bi bi-envelope-open"></i></div>
                 <div class="detail-content">
-                  <span class="detail-label">Email</span>
+                  <span class="detail-label">Email</span><br />
                   <span class="detail-value">tanziriccardo.r@libero.it</span>
                 </div>
               </div>
@@ -1440,20 +1020,19 @@
               <div class="detail-item">
                 <div class="detail-icon"><i class="bi bi-telephone-outbound"></i></div>
                 <div class="detail-content">
-                  <span class="detail-label">Telefono</span>
-                  <span class="detail-value">(+39) 3895579108</span>
+                  <span class="detail-label">Telefono</span><br />
+                  <span class="detail-value">(+39) 389 5579108</span>
                 </div>
               </div>
 
               <div class="detail-item">
                 <div class="detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
                 <div class="detail-content">
-                  <span class="detail-label">Sede</span>
+                  <span class="detail-label">Sede</span><br />
                   <span class="detail-value">Italia • Disponibile da remoto e on-site</span>
                 </div>
               </div>
             </div>
-
           </div>
 
           <div class="col-lg-7">
@@ -1467,20 +1046,20 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>Nome e Cognome</label>
-                      <input type="text" name="name" required>
+                      <input type="text" name="name" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>Email</label>
-                      <input type="email" name="email" required>
+                      <input type="email" name="email" required />
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label>Oggetto</label>
-                  <input type="text" name="subject" required>
+                  <input type="text" name="subject" required />
                 </div>
 
                 <div class="form-group">
@@ -1491,7 +1070,7 @@
                 <!-- GDPR consenso -->
                 <div class="form-group">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                    <input class="form-check-input" type="checkbox" id="privacyCheck" required />
                     <label class="form-check-label" for="privacyCheck">
                       Acconsento al trattamento dei dati per rispondere al messaggio (GDPR).
                     </label>
@@ -1499,13 +1078,13 @@
                 </div>
 
                 <div class="my-3">
-                  <div class="loading">Invio in corso…</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Messaggio inviato con successo! Ti risponderò al più presto.</div>
+                  <div class="loading" style="display:none;">Invio in corso…</div>
+                  <div class="error-message" style="display:none;"></div>
+                  <div class="sent-message" style="display:none;">Messaggio inviato con successo! Ti risponderò al più presto.</div>
                 </div>
 
                 <button type="submit" class="submit-btn">
-                  <span>Invia</span><i class="bi bi-arrow-right"></i>
+                  <span>Invia</span> <i class="bi bi-arrow-right"></i>
                 </button>
               </form>
 
@@ -1516,55 +1095,52 @@
       </div>
     </section>
 
-
   </main>
 
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer light-background">
     <div class="container">
-      <h3 class="sitename">Tanzi Riccardo</h3>
+      <h3 class="sitename">Dott. Tanzi Riccardo</h3>
       <p>Sviluppo software su misura: web app, mobile e GIS. Codice pulito, UX curata e risultati misurabili.</p>
 
       <div class="social-links d-flex justify-content-center">
-        <!-- aggiungi altri link se vuoi -->
+        <!-- link social -->
       </div>
 
       <div class="container">
         <div class="copyright">
           <span>© <span id="year"></span></span>
-          <strong class="px-1 sitename">Tanzi Riccardo</strong>
+          <strong class="px-1 sitename">Dott. Tanzi Riccardo</strong>
           <span>• Tutti i diritti riservati</span>
         </div>
+
         <div class="credits">
-          <p style="color:transparent;">Design di base: <a href="https://bootstrapmade.com/"
-              style="color:transparent;">BootstrapMade</a></p> Realizzato dal <a href="https://tanziriccardo.it/"> Dott. Tanzi
-            Riccardo</a>
+          <p style="color:transparent;margin:0;">Design di base: BootstrapMade</p>
+          Realizzato dal <a href="https://tanziriccardo.it/">Dott. Tanzi Riccardo</a>
         </div>
       </div>
     </div>
   </footer>
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+  <!-- ======= EmailJS ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function () {
-      // 1️⃣ Inizializza con la tua public key (da EmailJS → Account → API keys)
       emailjs.init({ publicKey: "2Inu3MouG0kDJjNXm" });
 
-      // 2️⃣ Riferimenti agli elementi
       const form = document.getElementById('contactForm');
       const loading = form.querySelector('.loading');
       const errorMsg = form.querySelector('.error-message');
       const successMsg = form.querySelector('.sent-message');
 
-      // 3️⃣ Gestione submit
       form.addEventListener('submit', function (event) {
         event.preventDefault();
         loading.style.display = 'block';
         errorMsg.style.display = 'none';
         successMsg.style.display = 'none';
 
-        const serviceID = "service_cl5xhof";  // es. "service_123abc"
-        const templateID = "template_bcrh3ju"; // es. "template_456xyz"
+        const serviceID = "service_cl5xhof";
+        const templateID = "template_bcrh3ju";
 
         emailjs.sendForm(serviceID, templateID, this)
           .then(() => {
@@ -1581,14 +1157,13 @@
   </script>
 
   <script>
-    // imposta dinamicamente l'anno del copyright
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
-
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -1607,6 +1182,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
   <script>
     (function initProjectSwipers() {
       var carousels = document.querySelectorAll('.project-swiper');
@@ -1614,7 +1190,7 @@
         new Swiper(el, {
           loop: true,
           speed: 500,
-          spaceBetween: 10,
+          spaceBetween: 12,
           centeredSlides: true,
           slidesPerView: 1,
           preloadImages: false,
@@ -1627,12 +1203,19 @@
             nextEl: el.querySelector('.swiper-button-next'),
             prevEl: el.querySelector('.swiper-button-prev'),
           },
-          // Autoplay opzionale
-          // autoplay: { delay: 3000, disableOnInteraction: false },
         });
       });
     })();
+
+    (function initLightbox() {
+      GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true
+      });
+    })();
   </script>
+
 </body>
 
 </html>
