@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Demo Prova Virtuale</title>
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<div class="product-container">
+  <h1>Demo Prodotto: Fascia Biadesiva Invisibile</h1>
+  <button id="vto-open" class="btn">Prova virtuale</button>
+</div>
+
+<!-- Modal -->
+<div class="vto-modal" id="vto-modal" aria-hidden="true">
+  <div class="vto-backdrop" id="vto-close"></div>
+  <div class="vto-panel">
+    <div class="vto-header">
+      <h2>Prova Virtuale (Demo)</h2>
+      <button id="vto-x">✕</button>
+    </div>
+
+    <div class="vto-body">
+      <input type="file" id="vto-file" accept="image/*">
+      <div class="vto-preview">
+        <img id="vto-img" alt="Anteprima selfie" />
+        <div id="vto-empty">Carica una foto</div>
+      </div>
+      <button id="vto-run" class="btn">Simula prova</button>
+
+      <div class="vto-result" id="vto-result">
+        <h3>Risultato Demo</h3>
+        <div class="vto-images">
+          <div>
+            <div>Prima</div>
+            <img id="vto-before" alt="Prima" />
+          </div>
+          <div>
+            <div>Dopo</div>
+            <img id="vto-after" alt="Dopo" />
+          </div>
+        </div>
+        <button id="vto-download" class="btn" disabled>Scarica immagine</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="demo.js"></script>
+</body>
+</html>
