@@ -104,7 +104,6 @@
 
     .section-title p {
       color: var(--muted);
-      max-width: 72ch;
     }
 
     .resume .education-card,
